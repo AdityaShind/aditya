@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>ALL IN ONE SITE</title>
+        <style>
+            header{
+                background-color:#15ccff;
+                color: white;
+                text-align: center;
+                position: fixed;
+                width: 100%;
+                z-index: 1;
+                top: 0;
+                left: 0;
+            }
+            header h1{
+                text-align: center;
+                color: white;
+                border: 8px solid white;
+                padding: 6px 12px;
+                display: inline-block;
+                border-radius: 10px;
+            }
+            .footer{
+                background-color: #15ccff;
+                color: white;
+                text-align: center;
+                padding: 15px 0;
+                margin-top: 20px;
+            }
+            .footer1{
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+            .follow ul{
+                white-space: nowrap;
+                max-width: 1200px;
+                margin: 0 auto;
+            }
+            .follow li:hover{
+                border: 1px solid #15ccffc8;
+                top: -4px;
+
+            }
+            .follow li{
+                width: 25%;
+                display: inline-block;
+                font-size: 24px;
+            }
+            .follow{
+                width: 30%;
+                margin: 10px;
+            }
+            .tnc{
+                width: 30%;
+                margin: 10px;
+            }
+            .useful{
+                width: 30%;
+                margin: 10px;
+            }
+            .useful h3{
+                border-bottom: 2px solid #fff;
+                padding-bottom: 10px;
+                margin-bottom: 15px;
+                font-size: 30px;
+            }
+            .tnc h3{
+                border-bottom: 2px solid #fff;
+                padding-bottom: 10px;
+                margin-bottom: 15px;
+                font-size: 30px;
+            }
+            .follow h3{
+                border-bottom: 2px solid #fff;
+                padding-bottom: 10px;
+                margin-bottom: 15px;
+                font-size: 30px;
+            }
+            .footer1 li a{
+                text-decoration: none;
+                color: white;
+                padding: 12px 15px;
+                font-weight: bold;
+                font-size: 20px;
+            }
+            .login{
+                background-color: #f4f4f4;
+                padding: 20px;
+                position: sticky;
+                top: 100px;
+            }
+            .login ul{
+                white-space: nowrap;
+                max-width: 1200px;
+                margin: 0 auto;
+            }
+            .login li{
+                width: 25%;
+                display: inline-block;
+                font-size: 24px;
+            }
+            .login li a{
+                text-decoration: none;
+                color: #4b4b4b;
+                padding: 12px 15px;
+                font-weight: bold;
+                font-size: 25px;
+            }
+            .login li a:hover{
+                text-decoration: underline;
+                background-color: #d5d5d5;
+            }
+            .product-listings{
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                margin: 20px;
+                border: 5px solid #15ccff;
+                border-radius: 15px;
+                padding: 25px;
+            }
+            .product:hover{
+                position: relative;
+                top: -4px;
+                background-color: #dedede;
+            }            
+            .search{
+                margin: 20px;
+                display: flex;
+                justify-content: center;
+            }
+            .search input[type="text"] {
+                width: 300px;
+                padding: 10px;
+                border: 2px solid #15ccff;
+                border-radius: 5px 0 0 5px;
+                border-right: 0;
+                outline: none;
+            }
+            .search button{
+                padding: 10px 20px;
+                border: 2px solid #15ccff;
+                border-left: 0;
+                background-color: #15ccff;
+                color: white;
+                cursor: pointer;
+                border-radius: 0 5px 5px 0;
+            }
+            .shop h1{
+                text-align: center;
+                color: #15ccff;
+            }
+            .search button:hover{
+                 background-color: #15ccffd8;
+            }
+            .shoptext{
+                max-width: 100%;
+                width: 1200px;
+                margin: 20px auto;
+                padding: 0 250px;
+                box-sizing: border-box;
+            }
+            .text{
+                color: #15ccff;
+                font-size: 16px;
+                padding: 16px 32px;
+                font-weight: bold;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <h1>All in <span>ONE</span></h1>
+        </header>
+            <br><br><br><br>    
+            <div class="login">
+                <ul>
+                    <li><a href="#">home</a></li>
+                    <li><a href="#">sign in</a></li>
+                    <li><a href="#">login </a></li>
+                    <li><a href="#">about us</a></li>
+                </ul>                
+            </div>
+            <br><br>
+        <div class="search">
+            <input type="text" placeholder="search for product..." required>
+            <button onclick="alert('searching has been completed')">search</button>
+        </div>
+        <div class="product-listings">
+            <div class="product">
+                <img src="https://www.lg.com/content/dam/channel/wcms/in/images/dishwasher/dfb532fp_apzpeil_eail_in_c/DFB532FP-Dishwasher-front-view-350.jpg" alt="Dishwasher" width="250px" height="350px">
+                <div class="product info">
+                    <h2>LG Dishwasher</h2>
+                </div>
+            </div>
+            <div class="product">
+                <img src="data:image/jpeg;base64,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" alt="phone" width="250px" height="350px">
+                <div class="product info">
+                    <h2>OnePlus +</h2>
+                </div>
+            </div>
+            <div class="product">
+                <img src="https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/MTJV3?wid=1144&hei=1144&fmt=jpeg&qlt=90&.v=1694014871985" alt="airpods" width="250px" height="350px">
+                <div class="product info">
+                    <h2>Apple Air Pods</h2>
+                </div>
+            </div>
+            <div class="product">
+                <img src="https://www.sathya.in/media/92729/catalog/Sony%20Bravia%2065%204K%20Ultra%20HD%20Smart%20LED%20Google%20TV%2002.jpg" alt="smart television" width="250px" height="350px">
+                <div class="product info">
+                    <h2>Sony BRavia</h2>
+                </div>
+            </div>
+            <div class="product">
+                <img src="https://m.media-amazon.com/images/I/8149ThY8zAL._AC_UY327_FMwebp_QL65_.jpg" alt="lenovo LOQ" width="250px" height="350px">
+                <div class="product info">
+                    <h2>Lenovo LOQ</h2>
+                </div>
+            </div>
+            <div class="product">
+                <img src="https://m.media-amazon.com/images/I/71XOnGsI3gL._AC_UL480_FMwebp_QL65_.jpg" alt="HP Victus" width="250px" height="350px">
+                <div class="product info">
+                    <h2>HP VICTUS</h2>
+                </div>
+            </div>
+            <div class="product">
+                <img src="https://m.media-amazon.com/images/I/61rHoVXvtPL._AC_UY327_FMwebp_QL65_.jpg" alt="gaming set" width="250px" height="350px">
+                <div class="product info">
+                    <h2>Gaming PC </h2>
+                </div>
+            </div>
+            <div class="product">
+                <img src="https://img.freepik.com/premium-photo/isolated-iphone-15-mobile-front-back-showcasing-sleek-desig-white-background-clean_655090-799590.jpg" alt="iPhone" width="250px" height="350px">
+                <div class="product info">
+                    <h2>Iphone 15</h2>
+                </div>
+            </div>
+            <div class="product">
+                <img src="https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcRw-7vt2Zm3T73sSH-WRVNXEI7sN7vVAdydJiBAKhnBzuKz09ktFVxUuZLgN5wbb8tR9JzBl8RaZgXvCGi-_tfvbawER3ipM4_HXvFbWtn7lpr1vjuJg3OlTg&usqp=CAE" alt="apple vision" width="250px" height="350px">
+                <div class="product info">
+                    <h2>Apple Vision pro</h2>
+                </div>
+            </div>
+            <div class="product">
+                <img src="https://sathya.in/media/87913/catalog/2-35.jpg" alt="refrigerator" width="250px" height="350px">
+                <div class="product info">
+                    <h2>LG Refrigerator</h2>
+                </div>
+            </div>
+        </div> 
+        <div class="shop">
+            <h1>Shop now!!!!</h1>
+        </div>
+        <div class="shoptext">
+            <div class="text">               
+                Find the latest gadgets and devices at unbeatable prices. From smartphones and laptops to home
+                appliances and gaming gear, we offer top-quality products from trusted brands. Enjoy exclusive
+                deals, fast delivery, and a seamless shopping experience. Upgrade your tech today with us!
+            </div>
+        </div>              
+        <footer class="footer">
+            <div class="footer1">
+                <div class="useful">
+                    <h3>Useful Links</h3>
+                    <ul>
+                        <li><a href="#">FAQs</a></li>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="tnc">
+                    <h3>Policies</h3>
+                    <ul>
+                        <li><a href="#">Terms &amp; Conditions</a></li>
+                        <li><a href="#">Exchange Policy</a></li>
+                        <li><a href="#">Shipping Policy</a></li>
+                    </ul>
+                </div>
+                <div class="follow">
+                    <h3>follow us :</h3>
+                    <ul>
+                        <li><a href="https://web.whatsapp.com/" class="whatsapp"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/WhatsApp.svg/800px-WhatsApp.svg.png" alt="whatsapp" width="50px" height="50px"></a></li>
+                        <li><a href="https://www.instagram.com/" class="instagram"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Instagram_logo_2022.svg/640px-Instagram_logo_2022.svg.png" alt="instagram" width="50px" height="50px"></a></li>
+                        <li><a href="https://twitter.com/" class="twitter"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/ce/X_logo_2023.svg/1200px-X_logo_2023.svg.png" alt="twitter" width="50px" height="50px"></a></li>
+                        <li><a href="https://www.facebook.com/" class="facebook"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Facebook_f_logo_%282019%29.svg/1200px-Facebook_f_logo_%282019%29.svg.png" alt="facebook" width="50px" height="50px"></a></li>
+                    </ul>                       
+                </div>
+            </div>
+        </footer>       
+    </body>
+</html>
